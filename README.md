@@ -16,7 +16,7 @@ This repository provides you configuration files to generate templates for [Debi
 | proxmox_iso_file          | The path to you iso file (your-storage:anyfolder/debian-10.10.0-amd64-netinst.iso) |                    |
 | http_ip                   | The optional IP address for the vm to access the Packer http server                | .HTTPIP            |
 
-> If you try to run Packer within WSL2 the port will only be opened on localhost. Use a container instead to open it on 0.0.0.0 and set the `http_ip` to the ip address of your physical interface
+> If you try to run Packer within WSL2 the port will only be opened on localhost. Use a container instead to open it on 0.0.0.0 and set the `http_ip` to the ip address of your physical interface. Make sure the connected network is set to private in Windows or the HTTP-Port 12111 is opened in the firewall.
 
 ## Important
 
